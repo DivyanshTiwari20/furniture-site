@@ -48,8 +48,14 @@ export default function ProductGrid({
       }
 
       // 2. Category Filter
-      if (activeCategory && product.category !== activeCategory) {
-        return false;
+      if (activeCategory) {
+        if (activeCategory === 'In Stock') {
+          if (!product.isReadyToShip) return false;
+        } else if (activeCategory === 'Brand') {
+          // If Brand is selected as category, show all products and let the user enjoy the brand filters
+        } else if (product.category !== activeCategory) {
+          return false;
+        }
       }
 
       // 3. Brand Filter

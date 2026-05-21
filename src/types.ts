@@ -3,7 +3,7 @@ export interface Product {
   name: string;
   brand: string;
   designer: string;
-  category: 'Furniture' | 'Lighting' | 'Accessories' | 'Art de la table';
+  category: string;
   subCategory: string;
   description: string;
   basePriceEUR: number; // base price in EUR, converted dynamically
@@ -340,5 +340,92 @@ export const PRODUCTS_DATA: Product[] = [
     materials: 'High-grade mirror polished 18/8 stainless steel',
     sku: 'GJS-HKB-PIT',
     designerBio: 'Henning Koppel was an artist and designer who pioneered the "organic functionalist" style that defined the luxurious Danish silverware aesthetic.'
+  },
+  {
+    id: 'antoniolupi-washbasin',
+    name: 'Freestanding Marble Washbasin',
+    brand: 'antoniolupi',
+    designer: 'Carlo Colombo',
+    category: 'Bathroom',
+    subCategory: 'Wash basins',
+    description: 'A striking sculptural freestanding washbasin carved from a single block of fine Carrara marble. A true monument of high-end Italian bathroom design.',
+    basePriceEUR: 2800,
+    image: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&q=80&w=800',
+    gallery: [
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&q=80&w=800',
+      'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800'
+    ],
+    rating: 5.0,
+    reviewsCount: 14,
+    isBestSeller: true,
+    isReadyToShip: false,
+    isNew: true,
+    dimensions: 'H: 85cm x Diameter: 50cm',
+    materials: '100% genuine Bianco Carrara marble, satin drain plug cover',
+    sku: 'AL-FR-WSH-01',
+    designerBio: 'Carlo Colombo is one of the most prominent Italian architects, working closely with top premium design brands like antoniolupi, Flexform, and Varenna.'
+  },
+  {
+    id: 'boffi-kitchen-island',
+    name: 'K14 Architectural Kitchen Island',
+    brand: 'Boffi',
+    designer: 'Norbert Wangen',
+    category: 'Kitchen',
+    subCategory: 'Kitchen Islands',
+    description: 'The modular K14 kitchen block integrates custom work surfaces with a sliding countertop that reveals high-efficiency stainless steel induction zones and integrated water mixers.',
+    basePriceEUR: 12500,
+    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800',
+    gallery: [
+      'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800'
+    ],
+    rating: 4.9,
+    reviewsCount: 6,
+    isNew: true,
+    dimensions: 'W: 320cm x D: 120cm x H: 92cm',
+    materials: 'Solid Belgian river stone, satin marine-grade stainless steel base',
+    sku: 'BOF-K14-IND',
+    designerBio: 'Norbert Wangen has revolutionized the concept of minimalist modern kitchens, compacting all essential operations into beautiful, seamless monoliths.'
+  },
+  {
+    id: 'herman-miller-aeron',
+    name: 'Aeron Ergonomic Office Chair',
+    brand: 'Herman Miller',
+    designer: 'Bill Stumpf & Don Chadwick',
+    category: 'Office',
+    subCategory: 'Task Chairs',
+    description: 'The golden benchmark for posture support and office ergonomics. Its innovative Pellicle suspension mesh structure conforms to the shape, weight, and movement of your body.',
+    basePriceEUR: 1390,
+    image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=800',
+    gallery: [
+      'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=800'
+    ],
+    rating: 4.8,
+    reviewsCount: 115,
+    isBestSeller: true,
+    isReadyToShip: true,
+    dimensions: 'W: 68.5cm x D: 68.5cm x H: 96-108cm',
+    materials: 'High-tensile Pellicle elastomer mesh, recycled composite matrix frame, aluminum gas column',
+    sku: 'HM-AER-SIZEB',
+    designerBio: 'Bill Stumpf and Don Chadwick were pioneering industrial ergonomists whose research-driven designs redefined office environments for the post-industrial age.'
+  },
+  {
+    id: 'kettal-boma-sofa',
+    name: 'Boma Luxury Outdoor Corner Sofa',
+    brand: 'Kettal',
+    designer: 'Rodolfo Dordoni',
+    category: 'Outdoor',
+    subCategory: 'Outdoor Sofas',
+    description: 'Designed as a response to high demand for comfort in outdoor furniture, Boma features thick, cozy cushions supported by an elegant, lightweight powder-coated aluminum structure.',
+    basePriceEUR: 4100,
+    image: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=800',
+    gallery: [
+      'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=800'
+    ],
+    rating: 4.7,
+    reviewsCount: 9,
+    isReadyToShip: true,
+    dimensions: 'W: 240cm x D: 180cm x H: 75cm',
+    materials: 'Weatherproof high-performance outdoor quick-dry foam, Sunbrella acrylic upholstery, marine alloy frame',
+    sku: 'KET-BOM-CORNER'
   }
 ];
