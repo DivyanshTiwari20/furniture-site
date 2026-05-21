@@ -1,0 +1,6 @@
+{
+  "name": "Mohd Mollura Home Design",
+  "description": "Iconic design furniture, lighting and accessories. Exact replica of Mohd Shop with complete interactive catalog, currency converter, slide drawers, search filter, and quick view.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
